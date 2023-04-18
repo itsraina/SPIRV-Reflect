@@ -131,6 +131,10 @@ std::string ToStringSpvExecutionModel(SpvExecutionModel model) {
       return "TaskNV";
     case SpvExecutionModelMeshNV:
       return "MeshNV";
+    case SpvExecutionModelTaskEXT:
+      return "TaskEXT";
+    case SpvExecutionModelMeshEXT:
+      return "MeshEXT";
     case SpvExecutionModelRayGenerationKHR:
       return "RayGenerationKHR";
     case SpvExecutionModelIntersectionKHR:
@@ -275,6 +279,8 @@ std::string ToStringSpvDim(SpvDim dim) {
       return "Buffer";
     case SpvDimSubpassData:
       return "SubpassData";
+    case SpvDimTileImageDataEXT:
+      return "DimTileImageDataEXT";
 
     case SpvDimMax:
       break;
